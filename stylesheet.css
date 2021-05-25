@@ -1,0 +1,162 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    font-size: 20px;
+    color: white;
+    overflow-x: hidden;
+}
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("aman1.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    height: 100vh;
+}
+
+.clearfix::after
+{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.row
+{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo
+{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border-top-left-radius:6rem ;
+    border-bottom-left-radius: 6rem;
+}
+
+.mainnav
+{
+    float: right;
+    margin-top: 60px;
+}
+
+.mainnav li
+{
+    font-family: 'Tangerine', serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.mainnav li a
+{
+    padding: 5px 0px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.mainnav li a:hover
+{
+    border-bottom:2px solid #bf55ec;
+    color: #bf55ec;
+    font-weight: bolder;
+
+}
+
+
+.maincontent
+{
+    width: 1180px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1
+{
+    font-size: 240%;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+h2
+{
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.button
+{
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s border 0.2s color 0.2s;
+    background-color: transparent;
+    color: #bf55ec;
+    border: 1px solid #bf55ec ;
+}
+
+.button:hover
+{
+    background-color: whitesmoke;
+}
+
+.btn1
+{
+    margin-right: 15px;
+}
+
+.colorchange
+{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange
+{
+    0%{color: #bf55ec;}
+    25%{color: white;}
+    50%{color: #bf55ec}
+    75%{color: whitesmoke;}
+    100%{color: #bf55ec;}
+
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    right:50%
+    transform: translate(-50%,-50%);
+    letter-spacing: 1px;
+}
+
+.footname
+{
+    color: #bf55ec;
+    font-weight: bolder;
+}
